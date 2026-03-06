@@ -72,7 +72,7 @@ So **three 2:1 MUXes** are required to realize a **4:1 MUX** using a MUX tree.
 Equivalently, for a full binary tree realization of an \( n:1 \) MUX using **2:1 MUXes**, the number of 2:1 MUXes is:
 
 \[
-\text{Number of 2:1 MUXes} = n - 1
+$$\text{Number of 2:1 MUXes} = n - 1$$
 \]
 
 For \( n = 4 \), this gives \( 4 - 1 = 3 \), matching the repeated-division method.
@@ -226,7 +226,7 @@ If you have a schematic editor (such as in Vivado or any digital design tool), y
 - Bottom row: two 2:1 MUXes with inputs (I<sub>0</sub>, I<sub>1</sub>) and (I<sub>2</sub>, I<sub>3</sub>), both controlled by S<sub>0</sub>.  
 - Top row: one 2:1 MUX combining the two intermediate outputs, controlled by S<sub>1</sub>.
 
-*(You may optionally add an image asset here, e.g. `imageAssets/4-1MUXTreeCircuit.png`, once you create it.)*
+![4:1 Multiplexer Circuit](imageAssets/4-1MUXTreeCircuit.png)
 
 ---
 
@@ -249,7 +249,7 @@ In this project, one representative test pattern is:
 
 - For each select combination, set exactly **one input** high (1) and the rest low (0), and confirm that **Y** becomes 1 **only** when that input is selected.
 
-*(You may optionally add an image asset here, e.g. `imageAssets/4-1MUXTreeWaveform.png`, once you capture the simulation waveform.)*
+![4:1 Multiplexer Waveform](imageAssets/4-1MUXTreeWaveform.png)
 
 ---
 
